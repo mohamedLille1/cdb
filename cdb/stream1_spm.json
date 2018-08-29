@@ -1,0 +1,242 @@
+{
+  "ID": "a unique ID",
+  "type": "Channel configuration request",
+  "messageInterval": 6,
+  "enable": true,
+  "name": "stream_3",
+  "topic": "spm.sensordata.consumer",
+  "stream": [
+  	{
+      "channel_17": {
+        "name": "pt100_1",
+        "setup": {
+          "pt100": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_18": {
+        "name": "pt100_2",
+        "setup": {
+          "pt100": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_19": {
+        "name": "pt100_3",
+        "setup": {
+          "pt100": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_20": {
+        "name": "pt100_4",
+        "setup": {
+          "pt100": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_21": {
+        "name": "spm_1",
+        "setup": {
+          "spm": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_22": {
+        "name": "spm_2",
+        "setup": {
+          "spm": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_23": {
+        "name": "spm_3",
+        "setup": {
+          "spm": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_24": {
+        "name": "spm_4",
+        "setup": {
+          "spm": {
+            "enable": true,
+            "emulate": true,
+            "subsampleInterval": 1500
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

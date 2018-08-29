@@ -1,0 +1,395 @@
+{
+  "ID": "a unique ID",
+  "type": "Channel configuration request",
+  "messageInterval": 100,
+  "enable": true,
+  "name": "stream_1",
+  "topic": "imu.sensordata.consumer",
+  "stream": [
+    {
+      "channel_7": {
+        "name": "accel_x_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_9": {
+        "name": "accel_y_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_11": {
+        "name": "accel_z_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_1": {
+        "name": "gyro_roll_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },	
+    {
+      "channel_3": {
+        "name": "gyro_yaw_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },	
+    {
+      "channel_5": {
+        "name": "gyro_pitch_1",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_6": {
+        "name": "accel_x_1/2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_8": {
+        "name": "accel_y_2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_12": {
+        "name": "accel_z_2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "channel_2": {
+        "name": "gyro_roll_2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },	
+    {
+      "channel_4": {
+        "name": "gyro_yaw_2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },	
+    {
+      "channel_6": {
+        "name": "gyro_pitch_2",
+        "setup": {
+          "imu": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 100000
+          },
+          "temp_comp": {
+            "enable": false
+          },
+          "iir_filter_set": {
+            "enable": true,
+            "coef1": [
+              0,			
+              0,
+              4194304,
+              0,
+              0
+            ],
+            "coef2": [
+              0,
+              0,
+              4194304,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "integrity check": "my_CRC"
+}

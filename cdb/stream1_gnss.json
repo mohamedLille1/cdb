@@ -1,0 +1,22 @@
+{
+  "ID": "a unique ID",
+  "type": "Channel configuration request",
+  "messageInterval": 1000,
+  "enable": false,
+  "name": "stream_2",
+  "topic": "gnss.sensordata.consumer",
+  "stream": [
+    {
+      "channel_25": {
+        "name": "gnss_1",
+        "setup": {
+          "gnss": {
+            "enable": true,
+            "emulate": false,
+            "subsampleInterval": 1000000
+          }
+        }
+      }
+    }
+  ]
+}

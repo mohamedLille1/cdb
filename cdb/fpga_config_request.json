@@ -1,0 +1,5 @@
+{
+  "id": "fpga_req_id",
+  "type": "FPGA configuration request",
+  "integrityCheck": "my_CRC"
+}
