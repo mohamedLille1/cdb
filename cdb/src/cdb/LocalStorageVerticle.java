@@ -94,7 +94,7 @@ private String stream3_json_path;
 //		eb.publish(this.serial+".fpgaconfiguration", request_channels_config, new DeliveryOptions().addHeader("type", "json"));
 //		eb.publish(this.serial+".fpgaconfiguration.request", request_channels_config, new DeliveryOptions().addHeader("type", "json"));
 //		eb.publish("fpgaconfiguration", request_channels_config, new DeliveryOptions().addHeader("type", "json"));
-//		eb.publish("fpgaconfiguration.request", request_channels_config, new DeliveryOptions().addHeader("type", "json"));
+//		eb.publish("fpgaconfiguration.request", request_channels_config, new DeliveryOptions().addHeader("type", "json"));b
 		
 		//Configure channels
 //		String spm_config = new String(Files.readAllBytes(Paths.get("stream1_spm.json")), "UTF-8");
