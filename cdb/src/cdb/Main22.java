@@ -1,6 +1,5 @@
 package cdb;
 
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
@@ -16,14 +15,15 @@ import io.vertx.config.ConfigRetrieverOptions;
 import io.vertx.config.ConfigStoreOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
+import io.vertx.core.json.JsonObject;
 import io.vertx.core.spi.cluster.ClusterManager;
+import io.vertx.serviceproxy.ServiceBinder;
 import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 import rx.Observable;
 
+@SuppressWarnings("unused")
 public class Main {
-
 	public static void main(String[] args) {
-		
 		String serial = System.getenv("SERIAL");
         if(serial == null){
             System.err.println("No device serial specified (SERIAL env-var), shutting down.");
@@ -47,9 +47,7 @@ public class Main {
             return;
         }
         
-        
-//        Config hazelcastConfig = new XmlConfigBuilder(Main.class.getResourceAsStream("cluster.xml")).build();
-        Config hazelcastConfig = new XmlConfigBuilder(Main.class.getResourceAsStream("cluster.xml")).build();
+        Config hazelcastConfig = new XmlConfigBuilder(Main.class.getResourceAsStream("/cluster.xml")).build();
         hazelcastConfig.getNetworkConfig().getInterfaces().addInterface(hostIp);
         hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().getTrustedInterfaces().add(hostIp);
         hazelcastConfig.getNetworkConfig().setPublicAddress(hostIp);
@@ -71,7 +69,7 @@ public class Main {
                     if (ar.failed()) {
                         System.err.println("Couldn't retrieve configuration.");
                     } else {
-//                        JsonObject config = ar.result();
+                        JsonObject config = ar.result();
 //                        String influxHost = config.getString("INFLUX_HOST","127.0.0.1");
 //                        String influxDb = config.getString("INFLUX_DB", "COSAMIRA_DB");
 //                        Integer influxPort = config.getInteger("INFLUX_PORT", 8086);
@@ -83,11 +81,13 @@ public class Main {
                         try {
 							vertx.deployVerticle(new LocalStorageVerticle(serial, args[0], args[1], args[2], args[3], args[4], args[5]));
 						} catch (UnsupportedEncodingException e) {
-					
+							// TODO Auto-generated catch block
 							e.printStackTrace();
 						} catch (IOException e) {
+							// TODO Auto-generated catch block
 							e.printStackTrace();
 						} catch (Exception e) {
+							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
 
@@ -103,11 +103,10 @@ public class Main {
 
 	}
 	
-	private static String getHostIPv4FromInterface(String interfaceName) throws SocketException {
-        return Observable.from(Collections.list(NetworkInterface.getByName(interfaceName).getInetAddresses()))
-                .filter(inetAddress -> inetAddress.getHostAddress().length() < "255.255.255.255".length())
-                .map(InetAddress::getHostAddress)
-                .toBlocking().first();
-    }
-
+	 private static String getHostIPv4FromInterface(String interfaceName) throws SocketException {
+	        return Observable.from(Collections.list(NetworkInterface.getByName(interfaceName).getInetAddresses()))
+	                .filter(inetAddress -> inetAddress.getHostAddress().length() < "255.255.255.255".length())
+	                .map(InetAddress::getHostAddress)
+	                .toBlocking().first();
+	    }
 }
